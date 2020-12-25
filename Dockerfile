@@ -1,3 +1,4 @@
+# using alpine base
 FROM alpine:latest
 
 RUN \
