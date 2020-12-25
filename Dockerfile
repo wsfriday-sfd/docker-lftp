@@ -1,8 +1,6 @@
 # using alpine base
 FROM alpine:latest
 
-RUN \
-    add-pkg \
-        lftp
+RUN apk add --no-cache lftp
 
 VOLUME ["/storage"]
