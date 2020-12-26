@@ -6,4 +6,4 @@ RUN apk update && apk add openssh && apk add lftp
 
 VOLUME ["/storage"]
 
-ENTRYPOINT ["/bin/sh"]
+CMD tail -f /dev/null
