@@ -1,8 +1,6 @@
-# using alpine base
 FROM alpine:latest
 
-# add lftp
-RUN apk update && apk add openssh && apk add lftp
+RUN apk update && apk add openssh && apk add lftp && apk add screen
 
 VOLUME ["/storage"]
 
