@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add openssh && apk add lftp && apk add screen
+RUN apk update && apk add openssh && apk add lftp && apk add screen && apk add curl
 
 VOLUME ["/storage"]
 
