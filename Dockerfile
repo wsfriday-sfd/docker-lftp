@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update && apk add openssh && apk add lftp && apk add screen && apk add nano
 
-RUN addgroup -g 100 nobody
+RUN addgroup -g 100 nobody users
 USER nobody
 
 VOLUME ["/storage"]
