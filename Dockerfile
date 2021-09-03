@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update && apk add openssh && apk add lftp && apk add screen && apk add nano
 
-USER nobody
+RUN adduser -D -g '' desmo users
 
 VOLUME ["/storage"]
 
